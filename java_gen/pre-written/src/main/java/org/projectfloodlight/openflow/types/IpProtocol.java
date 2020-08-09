@@ -158,6 +158,9 @@ public class IpProtocol implements OFValueType<IpProtocol> {
     static final short NUM_MANET   = 0x8A;
     static final short NUM_HIP = 0x8B;
     static final short NUM_SHIM6   = 0x8C;
+    static final short NUM_QUIC = 0x8D;
+    // QUIC runs on top of UDP and not IP. Therefore, it does not have an protocol number (https://en.wikipedia.org/wiki/List_of_IP_protocol_numbers)
+    // This is a workaround, am not sure if it will work
 
     public static final IpProtocol HOPOPT = new IpProtocol(NUM_HOPOPT);
     public static final IpProtocol ICMP = new IpProtocol(NUM_ICMP);
@@ -300,6 +303,7 @@ public class IpProtocol implements OFValueType<IpProtocol> {
     public static final IpProtocol MANET = new IpProtocol(NUM_MANET);
     public static final IpProtocol HIP = new IpProtocol(NUM_HIP);
     public static final IpProtocol SHIM6 = new IpProtocol(NUM_SHIM6);
+    public static final IpProtocol QUIC = new IpProtocol(NUM_QUIC);
 
     public static final IpProtocol NONE = HOPOPT;
 
@@ -600,6 +604,9 @@ public class IpProtocol implements OFValueType<IpProtocol> {
                 return HIP;
             case NUM_SHIM6:
                 return SHIM6;
+            case NUM_QUIC:
+                return QUIC;
+	    
             default:
                 if (proto >= MAX_PROTO) {
                     throw new IllegalArgumentException("Illegal IP protocol number: "

@@ -681,6 +681,7 @@ exceptions = {
         'of_oxm_sctp_src_masked' : { 'value' : transport_port, 'value_mask' : transport_port },
         'of_oxm_sctp_dst' : { 'value' : transport_port },
         'of_oxm_sctp_dst_masked' : { 'value' : transport_port, 'value_mask' : transport_port },
+        'of_oxm_quic_stream_id' : { 'value' : stream_id }, #Needed to be done
         'of_oxm_eth_type' : { 'value' : eth_type },
         'of_oxm_eth_type_masked' : { 'value' : eth_type, 'value_mask' : eth_type },
         'of_oxm_vlan_vid' : { 'value' : vlan_vid_match },

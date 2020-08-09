@@ -399,6 +399,7 @@ union of_oxm_u {
     of_oxm_arp_sha_t arp_sha;
     of_oxm_ipv6_src_t ipv6_src;
     of_oxm_sctp_src_t sctp_src;
+    of_oxm_quic_stream_id_t quic_stream_id;
     of_oxm_icmpv6_code_t icmpv6_code;
     of_oxm_metadata_masked_t metadata_masked;
     of_oxm_eth_src_masked_t eth_src_masked;

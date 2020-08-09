@@ -1556,3 +1556,10 @@ struct of_bsn_tlv_free_count : of_bsn_tlv {
     uint16_t length;
     uint32_t value;
 };
+
+struct of_bsn_tlv_quic_stream_id : of_bsn_tlv {
+    uint16_t type == 216;
+    uint16_t length;
+    uint16_t value;
+};
+

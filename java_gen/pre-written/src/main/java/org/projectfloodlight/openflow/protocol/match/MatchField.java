@@ -346,6 +346,10 @@ public class MatchField<F extends OFValueType<F>> {
             new MatchField<>("conn_tracking_tp_dst", MatchFields.CONN_TRACKING_TP_DST,
                     new Prerequisite<>(MatchField.IP_PROTO, IpProtocol.TCP));
 
+    public final static MatchField<TransportPort> QUIC_STREAM_ID = new MatchField<>(
+            "quic_stream_id", MatchFields.QUIC_STREAM_ID,
+            new Prerequisite<>(MatchField.IP_PROTO, IpProtocol.QUIC));
+
 
     public String getName() {
         return name;

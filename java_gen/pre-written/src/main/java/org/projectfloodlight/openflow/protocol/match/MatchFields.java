@@ -88,4 +88,5 @@ public enum MatchFields {
     CONN_TRACKING_IPV6_DST,
     CONN_TRACKING_TP_SRC,
     CONN_TRACKING_TP_DST,
+    QUIC_STREAM_ID,
 }
