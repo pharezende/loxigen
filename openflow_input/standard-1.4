@@ -1197,6 +1197,7 @@ struct of_flow_add : of_flow_mod {
     uint16_t importance;
     of_match_t match;
     list(of_instruction_t) instructions;
+    of_key_t key;
 };
 
 struct of_flow_modify : of_flow_mod {

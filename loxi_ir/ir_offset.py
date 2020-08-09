@@ -120,6 +120,7 @@ of_base_lengths = dict(
     of_desc_str_t = (ofp_constants["OF_DESC_STR_LEN"], True),
     of_serial_num_t = (ofp_constants["OF_SERIAL_NUM_LEN"], True),
     of_controller_uri_t = (ofp_constants["OF_CONTROLLER_URI_LEN"], True),
+    of_key_t = (256, True),
     of_str64_t = (64, True),
     of_match_v1_t = (40, True),
     of_match_v2_t = (88, True),

@@ -200,6 +200,7 @@ fixed_length_strings = {
     'of_table_name_t': 32,
     'of_serial_num_t': 32,
     'of_desc_str_t': 256,
+    'of_key_t': 256,
     'of_str64_t': 64,
 }
 
